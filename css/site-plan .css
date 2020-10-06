@@ -46,7 +46,7 @@ header>h1 {
 
 p {
     font-family: var(--paragraph-font);
-    color: ;
+    color: blue;
     padding: 1em
 }
 
@@ -83,7 +83,7 @@ p {
 }
 
 nav {
-    background-color: ;
+    background-color: whitesmoke;
     line-height: 3em;
     text-align: center;
     font-size: 1.2em
