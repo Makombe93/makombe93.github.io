@@ -1,0 +1,26 @@
+header {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: blue;
+}
+
+p {
+    background-color: blueviolet;
+}
+
+header {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+main {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+footer {
+    max-width: 960px;
+    margin: 0 auto;
+}
