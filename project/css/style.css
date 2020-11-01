@@ -138,3 +138,35 @@ div.info {
     padding: 60px;
     margin-top: -65px;
 }
+
+.action {
+    background-color: rgba(240, 240, 240, 0.8);
+    margin: 1em 3em;
+    padding: 1em;
+    text-align: center;
+}
+
+.action button {
+    line-height: 2em;
+    width: 10em;
+    background-color: #e7c24f;
+    font-size: 1.2em;
+}
+
+.banner-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.banner-box img {
+    grid-column: 1 / -1;
+    /* the -1 is just a fancy way to say "span all the columns" */
+    grid-row: 1;
+}
+
+.home-left-img,
+.home-right-img {
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 5px 5px 5px #999;
+}
