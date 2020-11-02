@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 
+.bring {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+
 body {
     background-color: rgb(70, 111, 245);
     font-family: 'Times New Roman', "Ivar", serif;
@@ -140,8 +146,10 @@ div.info {
 }
 
 .action {
+    grid-column: 1;
+    grid-row: 1;
     background-color: rgba(240, 240, 240, 0.8);
-    margin: 1em 3em;
+    margin: 2em 20em;
     padding: 1em;
     text-align: center;
 }
