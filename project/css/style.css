@@ -83,6 +83,11 @@ div.hero img {
     height: 350px;
 }
 
+div.action {
+    padding: 40px;
+    margin: 100px;
+}
+
 section.sec1 {
     background-color: rgb(160, 212, 241);
     display: flex;
