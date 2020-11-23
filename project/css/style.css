@@ -1,206 +1,277 @@
                                             * {
-                                            box-sizing: border-box;
-                                        }
-                                        
-                                        .bring {
-                                            display: grid;
-                                            grid-gap: 1rem;
-                                            grid-template-columns: 1fr 1fr;
-                                        }
-                                        
-                                        body {
-                                            background-color: rgb(70, 111, 245);
-                                            font-family: 'Times New Roman', "Ivar", serif;
-                                            font-size: 16px;
-                                            padding: 0;
-                                            margin: 0;
-                                        }
-                                        
-                                        header {
-                                            color: rgb(15, 63, 219);
-                                            padding: 5px 0;
-                                            display: flex;
-                                            justify-content: center;
-                                        }
-                                        
-                                        section.h {
-                                            display: flex;
-                                            flex-direction: column;
-                                        }
-                                        
-                                        footer {
-                                            color: rgb(15, 9, 9);
-                                        }
-                                        
-                                        header,
-                                        main,
-                                        footer {
-                                            max-width: 960px;
-                                            margin: 0 auto;
-                                        }
-                                        
-                                        main {
-                                            background-color: white;
-                                            margin-top: -16px;
-                                            margin-bottom: -16px;
-                                        }
-                                        
-                                        header,
-                                        footer {
-                                            background: rgb(79, 193, 238);
-                                        }
-                                        
-                                        nav li {
-                                            padding-left: 100px;
-                                            display: inline-block;
-                                            padding: 10px;
-                                            margin: 2px;
-                                        }
-                                        
-                                        nav ul {
-                                            margin-top: -56px;
-                                            margin-left: 320px;
-                                        }
-                                        
-                                        nav a {
-                                            text-decoration: none;
-                                            color: white;
-                                        }
-                                        
-                                        .active {
-                                            color: rgb(226, 240, 247);
-                                        }
-                                        
-                                        nav ul li a:hover {
-                                            background-color: lavender;
-                                            color: black;
-                                            border-radius: 5px;
-                                            box-shadow: 5px 5px 5px black;
-                                        }
-                                        
-                                        div.hero img {
-                                            width: 100%;
-                                            height: 350px;
-                                        }
-                                        
-                                        div.action {
-                                            padding: 40px;
-                                            margin: 100px;
-                                        }
-                                        
-                                        section.sec1 {
-                                            background-color: rgb(160, 212, 241);
-                                            display: flex;
-                                            align-items: center;
-                                            padding: 9px;
-                                        }
-                                        
-                                        section.sec2 {
-                                            background-color: rgb(160, 212, 241);
-                                            ;
-                                            display: flex;
-                                            align-items: center;
-                                            padding: 70px;
-                                            image-resolution: 100dpi;
-                                        }
-                                        
-                                        section.sec3 {
-                                            background-color: rgb(160, 212, 241);
-                                            ;
-                                            text-align: center;
-                                            padding: 10px;
-                                            font-size: 1rem;
-                                        }
-                                        
-                                        .icon {
-                                            height: 60px;
-                                            margin-left: 13px;
-                                            margin-top: 23px;
-                                        }
-                                        
-                                        h2 {
-                                            text-decoration: none;
-                                            margin-top: 0px;
-                                            margin-right: 70px;
-                                            margin-left: 70px;
-                                        }
-                                        
-                                        footer div {
-                                            margin-left: 87px;
-                                            margin-top: -20px;
-                                            padding: 15px;
-                                            margin-right: -30px;
-                                        }
-                                        
-                                        div.info {
-                                            display: flex;
-                                            padding: 5px;
-                                            margin-top: -70px;
-                                            text-align: left;
-                                        }
-                                        
-                                        .copyright {
-                                            font-size: 13.5px;
-                                            text-align: center;
-                                            padding: 15px;
-                                            margin-top: -45px;
-                                            margin-left: -40px;
-                                        }
-                                        
-                                        .paragraph {
-                                            padding: 60px;
-                                            margin-top: -65px;
-                                        }
-                                        
-                                        .action {
-                                            grid-column: 1;
-                                            grid-row: 1;
-                                            background-color: rgba(240, 240, 240, 0.8);
-                                            margin: 2em 20em;
-                                            padding: 1em;
-                                            text-align: center;
-                                        }
-                                        
-                                        .action button {
-                                            line-height: 2em;
-                                            width: 10em;
-                                            background-color: #e7c24f;
-                                            font-size: 1.2em;
-                                        }
-                                        
-                                        .banner-box {
-                                            display: grid;
-                                            grid-template-columns: 1fr 1fr;
-                                        }
-                                        
-                                        .banner-box img {
-                                            grid-column: 1 / -1;
-                                            /* the -1 is just a fancy way to say "span all the columns" */
-                                            grid-row: 1;
-                                        }
-                                        
-                                        .home-left-img,
-                                        .home-right-img,
-                                        .b-fast-img,
-                                        .gym-img,
-                                        .playroom-img {
-                                            border: 1px solid #ccc;
-                                            padding: 10px;
-                                            box-shadow: 5px 5px 5px #999;
-                                        }
-                                        
-                                        section.amenities1,
-                                        section.amenities2,
-                                        section.amenities3 {
-                                            background-color: rgb(160, 212, 241);
-                                            display: flex;
-                                            align-items: center;
-                                            padding: 9px;
-                                            height: auto;
-                                        }
-                                        
-                                        footer div.amenities {
-                                            margin-left: 87px;
-                                            margin-top: -60px;
-                                            padding: 40px;
-                                            margin-right: -30px;
+                                                box-sizing: border-box;
+                                            }
+                                            
+                                            .bring {
+                                                display: grid;
+                                                grid-gap: 1rem;
+                                                grid-template-columns: 1fr 1fr;
+                                            }
+                                            
+                                            body {
+                                                background-color: rgb(70, 111, 245);
+                                                font-family: 'Times New Roman', "Ivar", serif;
+                                                font-size: 16px;
+                                                padding: 0;
+                                                margin: 0;
+                                            }
+                                            
+                                            header {
+                                                color: rgb(15, 63, 219);
+                                                padding: 5px 0;
+                                                display: flex;
+                                                justify-content: center;
+                                            }
+                                            
+                                            section.h {
+                                                display: flex;
+                                                flex-direction: column;
+                                            }
+                                            
+                                            footer {
+                                                color: rgb(15, 9, 9);
+                                            }
+                                            
+                                            header,
+                                            main,
+                                            footer {
+                                                max-width: 960px;
+                                                margin: 0 auto;
+                                            }
+                                            
+                                            main {
+                                                background-color: white;
+                                                margin-top: -16px;
+                                                margin-bottom: -16px;
+                                            }
+                                            
+                                            header,
+                                            footer {
+                                                background: rgb(79, 193, 238);
+                                            }
+                                            
+                                            nav li {
+                                                padding-left: 100px;
+                                                display: inline-block;
+                                                padding: 10px;
+                                                margin: 2px;
+                                            }
+                                            
+                                            nav ul {
+                                                margin-top: -56px;
+                                                margin-left: 320px;
+                                            }
+                                            
+                                            nav a {
+                                                text-decoration: none;
+                                                color: white;
+                                            }
+                                            
+                                            .active {
+                                                color: rgb(226, 240, 247);
+                                            }
+                                            
+                                            nav ul li a:hover {
+                                                background-color: lavender;
+                                                color: black;
+                                                border-radius: 5px;
+                                                box-shadow: 5px 5px 5px black;
+                                            }
+                                            
+                                            div.hero img {
+                                                width: 100%;
+                                                height: 350px;
+                                            }
+                                            
+                                            div.action {
+                                                padding: 40px;
+                                                margin: 100px;
+                                            }
+                                            
+                                            section.sec1 {
+                                                background-color: rgb(160, 212, 241);
+                                                display: flex;
+                                                align-items: center;
+                                                padding: 9px;
+                                            }
+                                            
+                                            section.sec2 {
+                                                background-color: rgb(160, 212, 241);
+                                                ;
+                                                display: flex;
+                                                align-items: center;
+                                                padding: 70px;
+                                                image-resolution: 100dpi;
+                                            }
+                                            
+                                            section.sec3 {
+                                                background-color: rgb(160, 212, 241);
+                                                ;
+                                                text-align: center;
+                                                padding: 10px;
+                                                font-size: 1rem;
+                                            }
+                                            
+                                            .icon {
+                                                height: 60px;
+                                                margin-left: 13px;
+                                                margin-top: 23px;
+                                            }
+                                            
+                                            h2 {
+                                                text-decoration: none;
+                                                margin-top: 0px;
+                                                margin-right: 70px;
+                                                margin-left: 70px;
+                                            }
+                                            
+                                            footer div {
+                                                margin-left: 87px;
+                                                margin-top: -20px;
+                                                padding: 15px;
+                                                margin-right: -30px;
+                                            }
+                                            
+                                            div.info {
+                                                display: flex;
+                                                padding: 5px;
+                                                margin-top: -70px;
+                                                text-align: left;
+                                            }
+                                            
+                                            .copyright {
+                                                font-size: 13.5px;
+                                                text-align: center;
+                                                padding: 15px;
+                                                margin-top: -45px;
+                                                margin-left: -40px;
+                                            }
+                                            
+                                            .paragraph {
+                                                padding: 60px;
+                                                margin-top: -65px;
+                                            }
+                                            
+                                            .action {
+                                                grid-column: 1;
+                                                grid-row: 1;
+                                                background-color: rgba(240, 240, 240, 0.8);
+                                                margin: 2em 20em;
+                                                padding: 1em;
+                                                text-align: center;
+                                            }
+                                            
+                                            .action button {
+                                                line-height: 2em;
+                                                width: 10em;
+                                                background-color: #e7c24f;
+                                                font-size: 1.2em;
+                                            }
+                                            
+                                            .banner-box {
+                                                display: grid;
+                                                grid-template-columns: 1fr 1fr;
+                                            }
+                                            
+                                            .banner-box img {
+                                                grid-column: 1 / -1;
+                                                /* the -1 is just a fancy way to say "span all the columns" */
+                                                grid-row: 1;
+                                            }
+                                            
+                                            .home-left-img,
+                                            .home-right-img,
+                                            .b-fast-img,
+                                            .playroom-img {
+                                                border: 1px solid #ccc;
+                                                padding: 10px;
+                                                box-shadow: 5px 5px 5px #999;
+                                            }
+                                            
+                                            section.amenities1,
+                                            section.amenities2,
+                                            section.amenities3 {
+                                                background-color: rgb(160, 212, 241);
+                                                display: flex;
+                                                align-items: center;
+                                                padding: 9px;
+                                                height: auto;
+                                            }
+                                            
+                                            form {
+                                                /* Center the form on the page */
+                                                margin: 0 auto;
+                                                width: 500px;
+                                                /* Form outline */
+                                                padding: 1em;
+                                                border: 1px solid #CCC;
+                                                border-radius: 1em;
+                                                background-color: rgb(251, 253, 253);
+                                            }
+                                            
+                                            ul {
+                                                list-style: none;
+                                                padding: 0;
+                                                margin: 0;
+                                            }
+                                            
+                                            form li+li {
+                                                margin-top: 1em;
+                                            }
+                                            
+                                            label {
+                                                /* Uniform size & alignment */
+                                                display: inline-block;
+                                                width: 120px;
+                                                text-align: right;
+                                            }
+                                            
+                                            input,
+                                            textarea {
+                                                /* To make sure that all text fields have the same font settings
+                                            By default, textareas have a monospace font */
+                                                font: 1em sans-serif;
+                                                /* Uniform text field size */
+                                                width: 300px;
+                                                box-sizing: border-box;
+                                                /* Match form field borders */
+                                                border: 1px solid #999;
+                                            }
+                                            
+                                            input:required:valid {
+                                                border-left: green solid 6px;
+                                            }
+                                            
+                                            input:focus,
+                                            textarea:focus {
+                                                /* Additional highlight for focused elements */
+                                                border-color: #000;
+                                            }
+                                            
+                                            textarea {
+                                                /* Align multiline text fields with their labels */
+                                                vertical-align: top;
+                                                /* Provide space to type some text */
+                                                height: 5em;
+                                            }
+                                            
+                                            .button {
+                                                /* Align buttons with the text fields */
+                                                padding-left: 90px;
+                                                /* same size as the label elements */
+                                            }
+                                            
+                                            button {
+                                                /* This extra margin represent roughly the same space as the space
+                                            between the labels and their text fields */
+                                                margin-left: 2.5em;
+                                            }
+                                            
+                                            #feedback {
+                                                /* add styling and layout properties of your own design here as needed */
+                                                padding-top: 20px;
+                                                text-align: center;
+                                                display: none;
+                                                color: black;
+                                                /* we will make the element invisible until the form is submitted successfully */
+                                            }

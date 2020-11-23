@@ -35,56 +35,85 @@
                 <button>Contact Us</button>
             </div>
         </div>
-        <div class="collect">
-            <section class="sec1">
-                <div>
-                    <h2>Your Home Away from Home</h2>
-                    <p class="paragraph"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos fugit fuga, dolore repellat vitae quia et dolorum ipsum dolor, suscipit deleniti delectus perferendis modi perspiciatis repellendus aliquid cupiditate dicta. Ex repudiandae,
-                        mollitia repellendus in ducimus repellat nulla perspiciatis magnam assumenda, quia laboriosam alias animi nostrum enim placeat. Laboriosam, quia doloremque?
-                    </p>
-                </div>
-                <div class="home-right-img">
-                    <img src="images/farawayhome.jpg" alt="Happy day" </div>
-            </section>
-            <section class="sec2">
-                <div class="home-left-img">
-                    <img src="images/wedding.jpg" alt="Wedding" style="width: 300px; height: 200px;">
-                </div>
-                <div>
-                    <h2>Wedding Receptions</h2>
-                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos fugit fuga, dolore repellat vitae quia et dolorum ipsum dolor, suscipit deleniti delectus perferendis modi perspiciatis repellendus aliquid cupiditate dicta. Ex repudiandae,
-                        mollitia repellendus in ducimus repellat nulla perspiciatis magnam assumenda, quia laboriosam alias animi nostrum enim placeat. Laboriosam, quia doloremque?
-                    </p>
-                </div>
-            </section>
-            <section class="sec3">
-                <h2>Family Search Center</h2>
-                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos fugit fuga, dolore repellat vitae quia et dolorum ipsum dolor, suscipit deleniti delectus perferendis modi perspiciatis repellendus aliquid cupiditate dicta. Ex repudiandae,
-                    mollitia repellendus in ducimus repellat nulla perspiciatis magnam assumenda, quia laboriosam alias animi nostrum enim placeat. Laboriosam, quia doloremque?
-                </p>
-            </section>
-            </div>
-    </main>
-    <footer>
-        <div class="info">
-            <div>
-                <p> &#128205; Temple Inn & Suites Headquarters<br> 355 Wisconsin Avenue<br> Bethesda, MD 20814<br> &#128222; 215-829-9999<br> &#128231; info@templinn.com<br>
-                </p>
-            </div>
-            <div>
-                <a href="https://www.facebook.com" target="_blank" rel="noopener">
-                    <img class="icon" src="images/facebook.png" alt="Facebook icon">
-                </a>
-                <a href="https://www.instagram.com" target="_blank" rel="noopener">
-                    <img class="icon" src="images/insta.png" alt="Instagram icon">
-                </a>
-                <a href="https://www.linkedin.com" target="_blank" rel="noopener">
-                    <img class="icon" src="images/linkedin.png" alt="Linkedin icon">
-                </a>
-            </div>
+        <div id="feedback"></div>
+        <div class="wrapper2">
+            <form action="/my-handling-form-page" method="post">
+                <ul>
+                    <li>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="user_name" required />
+                    </li>
+                    <li>
+                        <label for="mail">E-mail:</label>
+                        <input type="email" id="mail" name="user_mail" required />
+                    </li>
+                    <li>
+                        <label for="number"> Contact Number:</label>
+                        <input type="text" id="number" name="user_mobile" required />
+                    </li>
+                    <li>
+                        <label for="room">Type of Room</label>
+                        <select id="room" name="room_type">
+                            <option value="select" disabled selected>Select your room</option>
+                            <option value="deluxe">Family Room</option>
+                            <option value="two">Couples Room</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="arrival">Date of Arrival</label>
+                        <input type="date" id="arrival" name="arrival_date" />
+                    </li>
+                    <li>
+                        <label for="departure">Date of Departure</label>
+                        <input type="date" id="departure" name="departure_date" />
+                    </li>
+                    <li>
+                        <label for="msg">Message:</label>
+                        <textarea id="msg" name="user_message"></textarea>
+                    </li>
+                    <li class="button">
+                        <button type="submit">Submit your reservation</button>
+                    </li>
+                </ul>
+            </form>
         </div>
-        <div class="copyright"> Copyright &copy; 2020 Temple Inn & Suites | All Rights Reserved | Privacy and Cookie Statement | Batsirai Makombe</div>
-    </footer>
+        <script>
+            // get the feedback div element so we can do something with it.
+            const feedbackElement = document.getElementById('feedback');
+            // get the form element so we can read what was entered in it.
+            const formElement = document.forms[0];
+
+            // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+            formElement.addEventListener('submit', function(e) {
+                // stop the form from doing the default action
+                e.preventDefault();
+                // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+                feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value +
+                    '! Thank you for registering. We will get back with you as soon as possible!';
+                // make the feedback element visible.
+                feedbackElement.style.display = "block";
+            });
+        </script>
+        <footer>
+            <div class="info">
+                <div>
+                    <p> &#128205; Temple Inn & Suites Headquarters<br> 355 Wisconsin Avenue<br> Bethesda, MD 20814<br> &#128222; 215-829-9999<br> &#128231; info@templinn.com<br>
+                    </p>
+                </div>
+                <div>
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener">
+                        <img class="icon" src="images/facebook.png" alt="Facebook icon">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener">
+                        <img class="icon" src="images/insta.png" alt="Instagram icon">
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank" rel="noopener">
+                        <img class="icon" src="images/linkedin.png" alt="Linkedin icon">
+                    </a>
+                </div>
+            </div>
+            <div class="copyright"> Copyright &copy; 2020 Temple Inn & Suites | All Rights Reserved | Privacy and Cookie Statement | Batsirai Makombe</div>
+        </footer>
 </body>
 
 </html>
