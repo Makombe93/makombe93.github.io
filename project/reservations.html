@@ -9,111 +9,113 @@
 </head>
 
 <body>
-    <header>
-        <picture>
-            <img src="images/templeinnicon.png" alt="Temple Inn & Suites Logo" style="width:80px;height:80px;border:0;">
-        </picture>
-        <section class="h">
-            <h1>Temple Inn & Suites</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="amenities.html">Amenities</a></li>
-                    <li><a href="templespotlight.html">Temple Spotlight</a></li>
-                    <li><a href="reservations.html">Reservations</a></li>
-                </ul>
-            </nav>
-        </section>
-    </header>
-    <main>
-        <div class="banner-box hero img">
-            <img class="banner" src="images/hero.jpg" alt="Hero image" style="width: 960px; height: 500px;">
-            <div class="action">
-                <h3>
-                    Plan your next adventure with us!
-                </h3>
-                <button>Contact Us</button>
-            </div>
-        </div>
-        <div id="feedback"></div>
-        <div class="wrapper2">
-            <form action="/my-handling-form-page" method="post">
-                <ul>
-                    <li>
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="user_name" required />
-                    </li>
-                    <li>
-                        <label for="mail">E-mail:</label>
-                        <input type="email" id="mail" name="user_mail" required />
-                    </li>
-                    <li>
-                        <label for="number"> Contact Number:</label>
-                        <input type="text" id="number" name="user_mobile" required />
-                    </li>
-                    <li>
-                        <label for="room">Type of Room</label>
-                        <select id="room" name="room_type">
-                            <option value="select" disabled selected>Select your room</option>
-                            <option value="deluxe">Family Room</option>
-                            <option value="two">Couples Room</option>
-                        </select>
-                    </li>
-                    <li>
-                        <label for="arrival">Date of Arrival</label>
-                        <input type="date" id="arrival" name="arrival_date" />
-                    </li>
-                    <li>
-                        <label for="departure">Date of Departure</label>
-                        <input type="date" id="departure" name="departure_date" />
-                    </li>
-                    <li>
-                        <label for="msg">Message:</label>
-                        <textarea id="msg" name="user_message"></textarea>
-                    </li>
-                    <li class="button">
-                        <button type="submit">Submit your reservation</button>
-                    </li>
-                </ul>
-            </form>
-        </div>
-        <script>
-            // get the feedback div element so we can do something with it.
-            const feedbackElement = document.getElementById('feedback');
-            // get the form element so we can read what was entered in it.
-            const formElement = document.forms[0];
+    <div id="container">
+        <div id="main">
+            <header>
+                <picture>
+                    <img src="images/templeinnicon.png" alt="Temple Inn & Suites Logo" style="width:80px;height:80px;border:0;">
+                </picture>
+                <section class="h">
+                    <h1>Temple Inn & Suites</h1>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html" class="active">Home</a></li>
+                            <li><a href="amenities.html">Amenities</a></li>
+                            <li><a href="templespotlight.html">Temple Spotlight</a></li>
+                            <li><a href="reservations.html">Reservations</a></li>
+                        </ul>
+                    </nav>
+                </section>
+            </header>
+            <main>
+                <h2>Reservations</h2>
+                <div class="banner-box hero img">
+                    <img class="banner" src="images/hero.jpg" alt="Hero image" style="width: 960px; height: 500px;">
 
-            // add a 'listener' to wait for a submission of our form. When that happens run the code below.
-            formElement.addEventListener('submit', function(e) {
-                // stop the form from doing the default action
-                e.preventDefault();
-                // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
-                feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value +
-                    '! Thank you for registering. We will get back with you as soon as possible!';
-                // make the feedback element visible.
-                feedbackElement.style.display = "block";
-            });
-        </script>
-        <footer>
-            <div class="info">
-                <div>
-                    <p> &#128205; Temple Inn & Suites Headquarters<br> 355 Wisconsin Avenue<br> Bethesda, MD 20814<br> &#128222; 215-829-9999<br> &#128231; info@templinn.com<br>
-                    </p>
                 </div>
-                <div>
-                    <a href="https://www.facebook.com" target="_blank" rel="noopener">
-                        <img class="icon" src="images/facebook.png" alt="Facebook icon">
-                    </a>
-                    <a href="https://www.instagram.com" target="_blank" rel="noopener">
-                        <img class="icon" src="images/insta.png" alt="Instagram icon">
-                    </a>
-                    <a href="https://www.linkedin.com" target="_blank" rel="noopener">
-                        <img class="icon" src="images/linkedin.png" alt="Linkedin icon">
-                    </a>
+                <div id="feedback"></div>
+                <div class="wrapper2">
+                    <form action="/my-handling-form-page" method="post">
+                        <ul>
+                            <li>
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="user_name" required />
+                            </li>
+                            <li>
+                                <label for="mail">E-mail:</label>
+                                <input type="email" id="mail" name="user_mail" required />
+                            </li>
+                            <li>
+                                <label for="number"> Contact Number:</label>
+                                <input type="text" id="number" name="user_mobile" required />
+                            </li>
+                            <li>
+                                <label for="room">Type of Room</label>
+                                <select id="room" name="room_type">
+                                    <option value="select" disabled selected>Select your room</option>
+                                    <option value="deluxe">Family Room</option>
+                                    <option value="two">Couples Room</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label for="arrival">Date of Arrival</label>
+                                <input type="date" id="arrival" name="arrivaldate" />
+                            </li>
+                            <li>
+                                <label for="departure">Date of Departure</label>
+                                <input type="date" id="departure" name="departuredate" />
+                            </li>
+                            <li>
+                                <label for="msg">Message:</label>
+                                <textarea id="msg" name="usermessage"></textarea>
+                            </li>
+                            <li class="button">
+                                <button type="submit">Submit your reservation</button>
+                            </li>
+                        </ul>
+                    </form>
                 </div>
+                <script>
+                    // get the feedback div element.
+                    const feedbackElement = document.getElementById('feedback');
+                    // form element so as to understand what was entered.
+                    const formElement = document.forms[0];
+
+                    // add a 'listener' to wait for a submission of our form. Then run the code.
+                    formElement.addEventListener('submit', function(e) {
+                        // stop the form from doing the default action
+                        e.preventDefault();
+                        // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+                        feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value +
+                            '! Thank you for registering. We will revert back to you as soon as possible!';
+                        // make the feedback element visible.
+                        feedbackElement.style.display = "block";
+                    });
+                </script>
+            </main>
+        </div>
+
+    </div>
+    <footer>
+        <div class="info">
+            <div>
+                <p> &#128205; Temple Inn & Suites Headquarters<br> 355 Wisconsin Avenue<br> Bethesda, MD 20814<br> &#128222; 215-829-9999<br> &#128231; info@templinn.com<br>
+                </p>
             </div>
-            <div class="copyright"> Copyright &copy; 2020 Temple Inn & Suites | All Rights Reserved | Privacy and Cookie Statement | Batsirai Makombe</div>
-        </footer>
+            <div>
+                <a href="https://www.facebook.com" target="_blank" rel="noopener">
+                    <img class="icon" src="images/facebook.png" alt="Facebook icon">
+                </a>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener">
+                    <img class="icon" src="images/insta.png" alt="Instagram icon">
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" rel="noopener">
+                    <img class="icon" src="images/linkedin.png" alt="Linkedin icon">
+                </a>
+            </div>
+        </div>
+        <div class="copyright"> Copyright &copy; 2020 Temple Inn & Suites | All Rights Reserved | Privacy and Cookie Statement | Batsirai Makombe</div>
+    </footer>
 </body>
 
 </html>
