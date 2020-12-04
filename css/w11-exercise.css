@@ -88,3 +88,24 @@
     justify-items: center;
     align-items: center;
 }
+
+section {
+    width: 50%;
+    border: 1px solid;
+}
+
+.block1 {
+    align-content: left;
+}
+
+.block2 {
+    align-content: center;
+}
+
+.block3 {
+    align-content: right;
+}
+
+.block4 {
+    align-content: center;
+}
