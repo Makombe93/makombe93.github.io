@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
 :root {
-    --primary-color: #07064d;
-    --secondary-color: #b837d8;
-    --accent1-color: #6c9fe2;
-    --accent2-color: rgb(70, 184, 230);
+    --primary-color: #eb17ce;
+    --secondary-color: #19bff1;
+    --accent1-color: #89b7f3;
+    --accent2-color: rgb(215, 122, 252);
     --heading-font: "IM Fell French Canon SC";
-    --paragraph-font: Lato, Helvetica, sans-serif
+    --paragraph-font: Ariel, Helvetica, sans-serif
 }
 
 html {
