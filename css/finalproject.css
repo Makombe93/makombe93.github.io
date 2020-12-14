@@ -1,0 +1,146 @@
+        @import url('https://fonts.google.com/specimen/Kaushan+Script?query=script');
+         :root {
+            --primary-color: #d65ec6;
+            --secondary-color: #19bff1;
+            --accent1-color: white;
+            --accent2-color: rgb(19, 168, 228);
+            --heading-font: "Kaushan Script";
+            --paragraph-font: Ariel, Helvetica, sans-serif
+        }
+        
+        html {
+            background-color: var(--accent2-color)
+        }
+        
+        body {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 1em
+        }
+        
+        img {
+            max-width: 100%
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: var(--heading-font);
+            color: var(--primary-color)
+        }
+        
+        header {
+            padding: 1em;
+            text-align: center;
+            color: white;
+            background-color: var(--accent1-color)
+        }
+        
+        header>h1 {
+            color: var(--primary-color)
+        }
+        
+        p {
+            font-family: var(--paragraph-font);
+            color: black;
+            padding: 1em
+        }
+        
+        .colors {
+            width: 100%;
+            min-width: 350px;
+            margin: auto;
+            text-align: center
+        }
+        
+        .colors th {
+            background-color: rgb(202, 48, 48)
+        }
+        
+        .colors td {
+            width: 25%;
+            height: 3em
+        }
+        
+        .primary {
+            background-color: var(--primary-color)
+        }
+        
+        .secondary {
+            background-color: var(--secondary-color)
+        }
+        
+        .accent1 {
+            background-color: var(--accent1-color)
+        }
+        
+        .accent2 {
+            background-color: var(--accent2-color)
+        }
+        
+        nav {
+            background-color: var(--accent2-color);
+            line-height: 1em;
+            text-align: center;
+            font-size: 1.2em;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 10px;
+            overflow: hidden;
+            background-color: var(--secondary-color);
+            font-family: var(--head-font);
+            display: flex;
+        }
+        
+        nav li {
+            text-align: center;
+            padding-right: 100px;
+            margin: 0;
+            text-decoration: aliceblue;
+        }
+        
+        main {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        
+        h2 {
+            text-align: center;
+        }
+        
+        .grid-card-container {
+            margin: 0rem;
+            padding: 2em;
+        }
+        
+        grid-card-article-title {
+            text-align: center;
+        }
+        
+        .icon {
+            height: 60px;
+            margin-left: 13px;
+            margin-top: 23px;
+        }
+        
+        .contact1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            justify-items: center;
+            align-items: center;
+            text-align: center;
+            background-color: rgb(224, 70, 212);
+        }
+        
+        .root {
+            text-align: center;
+        }
