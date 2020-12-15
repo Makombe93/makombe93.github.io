@@ -36,12 +36,11 @@
         header {
             padding: 1em;
             text-align: center;
-            color: white;
-            background-color: var(--accent1-color)
+            background-image: url(../images/rose.jpg);
         }
         
         header>h1 {
-            color: var(--primary-color)
+            color: var(--primary-color);
         }
         
         p {
@@ -143,4 +142,20 @@
         
         .root {
             text-align: center;
+        }
+        
+        .gridarea1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        
+        .about-us {
+            font-size: 1.4em;
         }
