@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu+Mono:regular,italic,700,700italic");
+:root {
+    --primary-color: #33C1B1;
+    --secondary-color: #47829A;
+    --accent1-color: #782DF0;
+    --accent2-color: #5773EF;
+    --heading-font: "Ubuntu";
+    --paragraph-font: Lato, Helvetica, sans-serif
+}
+
+html {
+    background-color: var(--secondary-color);
+}
+
+body {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 1em;
+    font-size: 20px;
+}
+
+header {
+    background-color: var(--primary-color);
+    text-align: center;
+    font-family: var(--heading-font);
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--accent2-color);
+}
+
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: auto;
+    text-align: center
+}
+
+.colors th {
+    background-color: rgb(8, 21, 134);
+    color: white;
+}
+
+.colors td {
+    width: 25%;
+    height: 3em
+}
+
+.primary {
+    background-color: var(--primary-color)
+}
+
+.secondary {
+    background-color: var(--secondary-color)
+}
+
+.accent1 {
+    background-color: var(--accent1-color)
+}
+
+.accent2 {
+    background-color: var(--accent2-color)
+}
