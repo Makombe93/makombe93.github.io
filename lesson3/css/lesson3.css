@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Ubuntu+Mono:regular,italic,700,700italic");
 :root {
-    --primary-color: #33C1B1;
+    --primary-color: purple;
     --secondary-color: #47829A;
     --accent1-color: #782DF0;
-    --accent2-color: #5773EF;
+    --accent2-color: white;
     --heading-font: "Ubuntu";
     --paragraph-font: Lato, Helvetica, sans-serif
 }
 
 html {
-    background-color: var(--secondary-color);
+    background-color: var(--accent1-color);
 }
 
 body {
@@ -29,7 +29,7 @@ header {
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: var(--accent2-color);
+    color: var(--accent1-color);
 }
 
 .colors {
