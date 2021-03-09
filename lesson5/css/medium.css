@@ -1,0 +1,20 @@
+    @media only screen and (max-width:857px) {
+        .toggle {
+            display: block;
+            width: 40px;
+            height: 40px;
+            margin: 10px;
+            background: purple;
+            float: center;
+            cursor: pointer;
+            text-align: center;
+            font-size: 30px;
+            color: rgb(241, 144, 241);
+        }
+        .toggle:before {
+            line-height: 40px;
+        }
+        nav ul {
+            display: none;
+        }
+    }

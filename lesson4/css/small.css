@@ -15,7 +15,6 @@
                             text-align: center;
                             height: auto;
                             font-size: 1em;
-                            display: flex;
                         }
                         
                         footer {
@@ -27,32 +26,30 @@
                         
                         nav {
                             background-color: purple;
-                            line-height: 1em;
-                            text-align: center;
-                            font-size: 1em;
-                            color: white;
+                            width: 100%;
+                            line-height: 30px;
                         }
                         
-                        nav a {
-                            color: white;
-                        }
-                        
-                        nav ul {
-                            list-style-type: none;
-                            max-width: 100%;
-                            margin: 0 auto;
-                            padding: 10px;
-                            overflow: hidden;
-                            font-family: var(--head-font);
-                            display: flex;
-                        }
-                        
-                        nav li {
-                            text-align: center;
-                            padding-right: 100px;
+                        ul {
                             margin: 0;
+                        }
+                        
+                        ul li {
+                            list-style: none;
+                            display: inline-block;
+                            line-height: 15px;
+                        }
+                        
+                        ul li a {
                             display: block;
-                            text-decoration-color: white;
+                            text-decoration: none;
+                            color: white;
+                            padding: 0 30px;
+                            text-align: center;
+                        }
+                        
+                        ul li a:hover {
+                            color: rgb(241, 144, 241);
                         }
                         
                         h1 {

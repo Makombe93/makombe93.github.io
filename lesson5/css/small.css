@@ -1,0 +1,178 @@
+                        html {
+                            background-color: white;
+                        }
+                        
+                        body {
+                            background-color: white;
+                            margin: 0 auto;
+                            padding: 1em;
+                            font-size: 20px;
+                            max-width: 980px;
+                        }
+                        
+                        header {
+                            background-color: rgb(241, 144, 241);
+                            text-align: center;
+                            height: auto;
+                            font-size: 1em;
+                        }
+                        
+                        nav {
+                            background-color: purple;
+                            line-height: auto;
+                            width: 100%;
+                        }
+                        
+                        nav ul {
+                            margin: 0;
+                            padding: 0;
+                        }
+                        
+                        nav ul li {
+                            list-style: none;
+                            margin: 10px 0;
+                            padding: 0 20px;
+                            display: inline-block;
+                            height: 30px;
+                        }
+                        
+                        nav ul li a {
+                            text-align: center;
+                            margin: auto;
+                            padding: 5px;
+                            color: rgb(241, 144, 241);
+                            text-decoration: none;
+                            display: block;
+                        }
+                        
+                        nav ul li a.active,
+                        nav ul li a:hover {
+                            background: white;
+                            color: rgb(241, 144, 241);
+                            transition: .5s;
+                        }
+                        
+                        .toggle {
+                            display: none;
+                        }
+                        
+                        footer {
+                            background-color: rgb(241, 144, 241);
+                            text-align: center;
+                            margin: 0;
+                            padding: 10px;
+                        }
+                        
+                        h1 {
+                            color: purple;
+                        }
+                        
+                        h2 {
+                            color: purple;
+                            text-align: center;
+                            padding: 0;
+                            margin: 0;
+                        }
+                        
+                        main {
+                            background-color: white;
+                            height: auto;
+                        }
+                        
+                        section {
+                            text-align: center;
+                            float: left;
+                            width: 98%;
+                            margin: 10px;
+                            color: purple;
+                        }
+                        
+                        img.hero {
+                            position: relative;
+                            width: 100%;
+                            height: auto;
+                            box-shadow: 5px 5px 10px grey;
+                        }
+                        
+                        .summary hr {
+                            border: 0;
+                            height: 0;
+                            border-top: 1px solid rgba(0, 0, 0, 0.1);
+                        }
+                        
+                        .summary {
+                            position: absolute;
+                            top: 20px;
+                            right: 20px;
+                            width: 280px;
+                            background-color: rgb(241, 144, 241);
+                            padding: 1em;
+                            color: white;
+                            border-radius: 10px;
+                            box-shadow: 0px 0px 10px rgb(44, 44, 44);
+                            opacity: .8;
+                        }
+                        
+                        .summary h3 {
+                            margin: 0;
+                        }
+                        
+                        .summary p {
+                            line-height: 20px;
+                            margin: 0;
+                            text-align: left;
+                        }
+                        
+                        .forecast {
+                            text-align: center;
+                        }
+                        
+                        .forecast_table {
+                            margin: 0 auto;
+                        }
+                        
+                        .forecast_table th {
+                            padding: 10px 25px 10px 25px;
+                            background-color: purple;
+                            color: white;
+                            border: 1px solid rgba(0, 0, 0, 0.3);
+                        }
+                        
+                        .forecast_table,
+                        .forecast_table td {
+                            font-family: var(--paragraph-font);
+                            font-size: 25px;
+                            border: 1px solid rgba(0, 0, 0, 0.3);
+                            padding: 8px;
+                            border-collapse: collapse;
+                            background-color: white;
+                        }
+                        
+                        .forecast .fas {
+                            font-size: 50px;
+                            padding: 10px;
+                        }
+                        
+                        .fa-cloud-sun-rain {
+                            color: var(--color5);
+                        }
+                        
+                        .fa-cloud-sun {
+                            color: var(--color4);
+                        }
+                        
+                        .fa-sun {
+                            color: rgb(241, 241, 59);
+                        }
+                        
+                        .article {
+                            background-color: white;
+                            box-shadow: 5px 5px 10px grey;
+                            padding: 5px;
+                        }
+                        
+                        .date {
+                            grid-column: 1;
+                            grid-row: 2;
+                            text-align: center;
+                        }
