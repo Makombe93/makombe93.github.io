@@ -27,11 +27,12 @@ header {
 }
 
 .cards section {
-    background-color: purple;
-    color: rgb(241, 144, 241);
+    background-color: rgb(241, 144, 241);
+    color: purple;
     width: 95%;
     border-radius: 5px;
     min-width: 250px;
+    border: 1px solid purple;
 }
 
 .cards section h2,
@@ -42,7 +43,7 @@ header {
 }
 
 .cards section h2 {
-    font-size: 2.0em;
+    font-size: 2.2em;
 }
 
 .cards section h4,
@@ -58,6 +59,7 @@ header {
     margin-top: 30px;
     width: 80%;
     padding-bottom: 20px;
+    box-shadow: 6px 6px 2px purple;
 }
 
 footer {
