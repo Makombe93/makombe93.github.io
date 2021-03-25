@@ -87,10 +87,13 @@
                             color: purple;
                         }
                         
-                        img.hero {
+                        .hero-image {
                             position: relative;
-                            width: 100%;
-                            height: auto;
+                            text-align: center;
+                        }
+                        
+                        .hero {
+                            width: 95%;
                             box-shadow: 5px 5px 10px grey;
                         }
                         
@@ -104,7 +107,7 @@
                             position: absolute;
                             top: 20px;
                             right: 20px;
-                            width: 280px;
+                            width: 200px;
                             background-color: rgb(241, 144, 241);
                             padding: 1em;
                             color: white;
@@ -175,4 +178,16 @@
                             grid-column: 1;
                             grid-row: 2;
                             text-align: center;
+                        }
+                        
+                        .toggle {
+                            width: 40px;
+                            height: 40px;
+                            margin: 10px;
+                            background: purple;
+                            float: center;
+                            cursor: pointer;
+                            text-align: center;
+                            font-size: 30px;
+                            color: rgb(241, 144, 241);
                         }
