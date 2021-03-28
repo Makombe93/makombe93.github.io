@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Dela+Gothic+One:regular');
+@import url("https://fonts.googleapis.com/css?family=Lora:regular,500,600,700,italic,500italic,600italic,700italic");
+:root {
+    --primary-color: #02044f;
+    --secondary-color: rgb(0, 119, 182);
+    --accent1-color: white;
+    --accent2-color: #009ff5;
+    --heading-font: "Dela Gothic One";
+    --paragraph-font: "Lora", Helvetica, sans-serif
+}
+
+html {
+    background-color: var(--accent2-color)
+}
+
+body {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 1em
+}
+
+img {
+    max-width: 100%
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color)
+}
+
+header {
+    padding: 1em;
+    text-align: center;
+    color: var(--accent2-color);
+    background-color: var(--secondary-color)
+}
+
+header>h1 {
+    color: var(--primary-color)
+}
+
+p {
+    font-family: var(--paragraph-font);
+    color: black;
+    padding: 1em
+}
+
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: auto;
+    text-align: center
+}
+
+.colors th {
+    background-color: pink;
+}
+
+.colors td {
+    width: 25%;
+    height: 3em
+}
+
+.primary {
+    background-color: var(--primary-color)
+}
+
+.secondary {
+    background-color: var(--secondary-color)
+}
+
+.accent1 {
+    background-color: var(--accent1-color)
+}
+
+.accent2 {
+    background-color: var(--accent2-color)
+}
+
+nav {
+    background-color: var(--accent1-color);
+    line-height: 3em;
+    text-align: center;
+    font-size: 1.2em
+}
+
+nav>ul {
+    list-style-type: none;
+    display: flex
+}
+
+nav a {
+    padding: 1em;
+    min-width: 70px
+}
+
+nav a:link,
+nav a:visited {
+    color: var(--accent1-color)
+}
+
+nav a:hover {
+    color: rgb(44, 44, 146);
+    background-color: aliceblue
+}
